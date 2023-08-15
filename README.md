@@ -38,13 +38,12 @@ This is a backend capstone project assignment from almabetter. This Node.js serv
    ```bash
    npm start
  The server will start running on the specified port (default is 3000). You can access it at http://localhost:3000.
-2. **Start the server:**
-
-Open your web browser and navigate to http://localhost:3000 to view the default HTML page.
+ 
+2. **Open your web browser and navigate to http://localhost:3000 to view the default HTML page.**
 ## Endpoints
 
-- ### GET /subscribers : Fetches a list of all subscribers.
+-  **GET /subscribers** : Fetches a list of all subscribers.
 
-- ### GET /subscribers/names : Fetches a list of subscribers' names and subscribed channels.
+-  **GET /subscribers/names** : Fetches a list of subscribers' names and subscribed channels.
 
-- ### GET /subscribers/:id : Fetches details of a subscriber by their ID.
+-  **GET /subscribers/:id** : Fetches details of a subscriber by their ID.
