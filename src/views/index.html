@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Documentation</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+        background-color: #f5f5f5;
+        color: #333;
+      }
+
+      h1 {
+        font-size: 32px;
+        margin-bottom: 20px;
+        color: #007bff;
+      }
+
+      h2 {
+        font-size: 24px;
+        margin-bottom: 15px;
+        color: #007bff;
+      }
+
+      p {
+        font-size: 18px;
+        margin-bottom: 10px;
+      }
+
+      code {
+        font-size: 16px;
+        line-height: 35px;
+        background-color: #dadada;
+        padding: 5px;
+        border-radius: 5px;
+        font-family: Consolas, monospace;
+        word-wrap: break-word;
+      }
+
+      .code {
+        display: inline-block;
+        font-size: 16px;
+        background-color: #a5c9fc;
+        padding: 5px;
+        border-radius: 5px;
+        font-family: Consolas, monospace;
+      }
+
+      .container {
+        max-width: 800px;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .button {
+        display: block;
+        margin-top: 30px;
+        background-color: #4caf50;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 20px;
+        margin-bottom: 15px;
+        text-decoration: none;
+        max-width: 250px;
+        text-align: center;
+      }
+
+      .button:hover {
+        background-color: #3e8e41;
+      }
+	  .main{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	  }
+	 
+    </style>
+  </head>
+
+  <body>
+    <div class="main">
+      <h1>Get Youtube Subscriber</h1>
+      <a href="/subscribers" class="button">GET /subscribers</a>
+      <h3>Returns an array of all subscribers in the database.</h3>
+      <div class="container">
+        <p><strong>Example:</strong></p>
+        <h3 class="code">GET /subscribers</h3>
+        <p><strong>Response:</strong></p>
+        <code
+          >[ {"_id":"6445244f4cd91e1becbc51d4","name":"Jeread
+          Krus","subscribedChannel":"CNET","subscribedDate":"2023-04-23T12:27:59.407Z","__v":0},
+          {"_id":"6445244f4cd91e1becbc51d5","name":"John
+          Doe","subscribedChannel":"freeCodeCamp.org","subscribedDate":"2023-04-23T12:27:59.410Z","__v":0},
+          {"_id":"6445244f4cd91e1becbc51d6","name":"Lucifer","subscribedChannel":"Sentex","subscribedDate":"2023-04-23T12:27:59.411Z","__v":0}
+          ]
+        </code>
+      </div>
+      <a href="/subscribers/names" class="button">GET /subscribers/names</a>
+
+      <h3>
+        Returns an array of all subscribers' names and subscribed channels in
+        the database.
+      </h3>
+      <div class="container">
+        <p><strong>Example:</strong></p>
+        <h3 class="code">GET /subscribers/names</h3>
+        <p><strong>Response:</strong></p>
+        <code
+          >[ {"name":"Jeread Krus","subscribedChannel":"CNET"}, {"name":"John
+          Doe","subscribedChannel":"freeCodeCamp.org"},
+          {"name":"Lucifer","subscribedChannel":"Sentex"} ]</code
+        >
+      </div>
+      <a href="/subscribers/6445244f4cd91e1becbc51d4" class="button"
+        >GET /subscribers/:id</a
+      >
+      <h3>Returns the subscriber with the specified ID.</h3>
+      <div class="container">
+        <p><strong>Example:</strong></p>
+        <h3 class="code">GET /subscribers/6445244f4cd91e1becbc51d4</h3>
+        <p><strong>Response:</strong></p>
+        <code
+          >{"_id":"6445244f4cd91e1becbc51d4","name":"Jeread
+          Krus","subscribedChannel":"CNET","subscribedDate":"2023-04-23T12:27:59.407Z","__v":0}</code
+        >
+      </div>
+    </div>
+  </body>
+</html>
