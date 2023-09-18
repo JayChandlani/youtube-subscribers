@@ -6,8 +6,8 @@
       body {
         font-family: Arial, sans-serif;
         padding: 20px;
-        background-color: #f5f5f5;
-        color: #333;
+        background-color: #333; /* Change background color to dark */
+        color: #f5f5f5; /* Change text color to light */
       }
 
       h1 {
@@ -30,11 +30,12 @@
       code {
         font-size: 16px;
         line-height: 35px;
-        background-color: #dadada;
+        background-color: #555; /* Change code block background color to a darker shade */
         padding: 5px;
         border-radius: 5px;
         font-family: Consolas, monospace;
         word-wrap: break-word;
+        color: #f5f5f5; /* Change code text color to light */
       }
 
       .code {
@@ -44,12 +45,13 @@
         padding: 5px;
         border-radius: 5px;
         font-family: Consolas, monospace;
+        color: #333; /* Change code text color to dark */
       }
 
       .container {
         max-width: 800px;
         padding: 20px;
-        background-color: #fff;
+        background-color: #444; /* Change container background color to a darker shade */
         border-radius: 10px;
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
       }
@@ -73,12 +75,12 @@
       .button:hover {
         background-color: #3e8e41;
       }
-	  .main{
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-	  }
-	 
+
+      .main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
     </style>
   </head>
 
@@ -92,12 +94,9 @@
         <h3 class="code">GET /subscribers</h3>
         <p><strong>Response:</strong></p>
         <code
-          >[ {"_id":"6445244f4cd91e1becbc51d4","name":"Jeread
-          Krus","subscribedChannel":"CNET","subscribedDate":"2023-04-23T12:27:59.407Z","__v":0},
-          {"_id":"6445244f4cd91e1becbc51d5","name":"John
-          Doe","subscribedChannel":"freeCodeCamp.org","subscribedDate":"2023-04-23T12:27:59.410Z","__v":0},
-          {"_id":"6445244f4cd91e1becbc51d6","name":"Lucifer","subscribedChannel":"Sentex","subscribedDate":"2023-04-23T12:27:59.411Z","__v":0}
-          ]
+          >[{"_id":"64db89eb93f3160b200939c8","name":"John
+          Doe","subscribedChannel":"freeCodeCamp.org","subscribedDate":"2023-08-15T14:21:31.950Z","__v":0},{"_id":"64db89eb93f3160b200939c7","name":"Jeread
+          Krus","subscribedChannel":"CNET","subscribedDate":"2023-08-15T14:21:31.949Z","__v":0},{"_id":"64db89eb93f3160b200939c9","name":"Lucifer","subscribedChannel":"Sentex","subscribedDate":"2023-08-15T14:21:31.950Z","__v":0}]
         </code>
       </div>
       <a href="/subscribers/names" class="button">GET /subscribers/names</a>
@@ -111,21 +110,21 @@
         <h3 class="code">GET /subscribers/names</h3>
         <p><strong>Response:</strong></p>
         <code
-          >[ {"name":"Jeread Krus","subscribedChannel":"CNET"}, {"name":"John
-          Doe","subscribedChannel":"freeCodeCamp.org"},
-          {"name":"Lucifer","subscribedChannel":"Sentex"} ]</code
+          >[{"name":"John
+          Doe","subscribedChannel":"freeCodeCamp.org"},{"name":"Jeread
+          Krus","subscribedChannel":"CNET"},{"name":"Lucifer","subscribedChannel":"Sentex"}]</code
         >
       </div>
-      <a href="/subscribers/6445244f4cd91e1becbc51d4" class="button"
+      <a href="/subscribers/64db89eb93f3160b200939c7" class="button"
         >GET /subscribers/:id</a
       >
       <h3>Returns the subscriber with the specified ID.</h3>
       <div class="container">
         <p><strong>Example:</strong></p>
-        <h3 class="code">GET /subscribers/6445244f4cd91e1becbc51d4</h3>
+        <h3 class="code">GET /subscribers/64db89eb93f3160b200939c7</h3>
         <p><strong>Response:</strong></p>
         <code
-          >{"_id":"6445244f4cd91e1becbc51d4","name":"Jeread
+          >{"_id":"64db89eb93f3160b200939c7","name":"Jeread
           Krus","subscribedChannel":"CNET","subscribedDate":"2023-04-23T12:27:59.407Z","__v":0}</code
         >
       </div>
