@@ -4,8 +4,6 @@ const mongoose = require('mongoose')
 const dotenv = require('dotenv');
 // Parse JSON bodies (as sent by API clients)
 app.use(express.json())
-app.use(express.json()); app.use(express.urlencoded({ extended: true }));
-app.use(bodyParser.json()); app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.urlencoded({ extended: false }));
 dotenv.config();
 // Connect to DATABASE
