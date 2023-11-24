@@ -26,7 +26,11 @@ This is a backend capstone project assignment from almabetter. This Node.js serv
 
    ```bash
    cd youtube-subscribers
-3. **Install the required dependencies:**
+3. **Rename .env.example file to .env and provide necessary credentials.**
+
+   ```bash
+   copy .env.example .env
+4. **Install the required dependencies:**
 
    ```bash
    npm install
